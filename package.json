@@ -1,6 +1,6 @@
 {
   "name": "depoch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unix epoch for dates. Number of days since Unix epoch.",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -9,6 +9,10 @@
     "esm",
     "src"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sleeksky-dev/depoch.git"
+  },
   "scripts": {
     "clean": "rimraf dist esm",
     "prebuild": "npm run clean",
