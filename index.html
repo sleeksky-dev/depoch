@@ -1,0 +1,21 @@
+<head>
+    <title>Depoch playground: Unix Epoch for Dates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<script type="module">
+    import {toDepoch, fromDepoch} from "https://unpkg.com/depoch?module";
+    window.toDepoch = toDepoch
+    window.fromDepoch = fromDepoch
+    console.log(toDepoch, fromDepoch);
+</script>
+<body>
+    <h1>Depoch - Unix Epoch for Dates</h1>
+    <input type="date" id="date" value="2020-01-01">
+    <button onclick="document.getElementById('depoch').value = toDepoch(document.getElementById('date').value)">toDepoch</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="number" id="depoch" value="19000">
+    <button onclick="document.getElementById('date').value = fromDepoch(document.getElementById('depoch').value).utc.toISOString().split('T')[0]">fromDepoch</button>
+
+    <br/><br/><br/>
+    <a href="https://github.com/sleeksky-dev/depoch">Github</a> | <a href="https://www.npmjs.com/package/depoch">NPM</a>
+</body>
