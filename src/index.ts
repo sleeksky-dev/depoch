@@ -7,7 +7,7 @@ const toDepoch = (date: Date | string | number) => {
       year = +str.substring(0, 4)
       month = +str.substring(4, 6)
       day = +str.substring(6, 8)
-    } else if (`${date}`.length === 5) {
+    } else if (`${date}`.length <= 5) {
       return date;
     } else {
       let dt = new Date(date)
