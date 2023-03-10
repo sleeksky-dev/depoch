@@ -1,8 +1,8 @@
 # Depoch - Unix Epoch for Dates
 
-When dealing with time, example birthdays, storing in Date Time comes with its own issues. It hard to ever get it right the first time.
+When dealing with time, example birthdays, storing in Date Time comes with its own issues. It's hard to ever get it right the first time.
 
-Depoch is the Unix Epoch equivalent for Dates. It return the number of days since Unix Epoch.
+Depoch is the Unix Epoch equivalent for Dates. It returns the number of days since Unix Epoch.
 
 The main idea is to store this number in database for dates. It makes it easy to go forward, backward, compare etc.
 
