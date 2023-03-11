@@ -41,3 +41,12 @@ test('Depoch local time', () => {
   expect(obj.day).toBe('Sunday');
 })
 
+test('Depoch date', () => {
+  const dt = toDepoch();
+  const now = new Date();
+  const obj = fromDepoch(dt);
+  expect(obj.year).toBe(now.getFullYear());
+  expect(obj.month).toBe(now.getMonth() + 1);
+  expect(obj.date).toBe(now.getDate());
+})
+

@@ -1,6 +1,7 @@
 
-const toDepoch = (date: Date | string | number) => {
+const toDepoch = (date?: Date | string | number) => {
   let year, month, day;
+  if (!date) date = new Date()
   if (typeof date === 'number') {
     if (`${date}`.length === 8) {
       let str = `${date}`
