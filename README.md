@@ -8,6 +8,8 @@ The main idea is to store this number in database for dates. It makes it easy to
 
 ## Usage
 
+You can try it out here - https://sleeksky-dev.github.io/depoch/
+
 ### Convert from date to depoch
 
 ```
